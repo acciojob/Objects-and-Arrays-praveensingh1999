@@ -1,14 +1,16 @@
 const players = ["John", "Bob", "Alice", "Poppy"];
-
 const person = {
   name: "John Doe",
   age: 80,
 };
 
-// Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
+// Write your code here
 
-window.players = players;
-window.person = person;
-window.team = team;
-window.team1 = team1;
-window.cap1 = cap1;
+// team should reference the same array
+const team = players;
+
+// team1 should be a copy of the array
+const team1 = [...players];   // or players.slice()
+
+// cap1 should be a copy of the object
+const cap1 = { ...person };   // or Object.assign({}, person)

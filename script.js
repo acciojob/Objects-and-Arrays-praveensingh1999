@@ -4,13 +4,11 @@ const person = {
   age: 80,
 };
 
-// Write your code here
-
-// team should reference the same array
+// Step 1: Reference to the players array
 const team = players;
 
-// team1 should be a copy of the array
-const team1 = [...players];   // or players.slice()
+// Step 2: Copy of the players array
+const team1 = [...players]; // or players.slice()
 
-// cap1 should be a copy of the object
-const cap1 = { ...person };   // or Object.assign({}, person)
+// Step 3: Copy of the person object
+const cap1 = { ...person }; // or Object.assign({}, person);

@@ -1,5 +1,5 @@
-const players = ["John", "Bob", "Alice", "Poppy"];
-const person = {
+window.players = ["John", "Bob", "Alice", "Poppy"];
+window.person = {
   name: "John Doe",
   age: 80,
 };

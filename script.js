@@ -1,14 +1,18 @@
-window.players = ["John", "Bob", "Alice", "Poppy"];
-window.person = {
+const players = ["John", "Bob", "Alice", "Poppy"];
+const person = {
   name: "John Doe",
   age: 80,
 };
 
-// Reference to the same array
-const team = players;
+// Attach originals to window
+window.players = players;
+window.person = person;
 
-// Copy of the array
-const team1 = [...players];
+// Reference to same array
+window.team = window.players;
 
-// Copy of the object
-const cap1 = { ...person };
+// Copy of array
+window.team1 = [...window.players];
+
+// Copy of object
+window.cap1 = { ...window.person };
